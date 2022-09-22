@@ -14,7 +14,7 @@ exec {stdout}>&1 || return
   {
     local -Pi pipe
     local -P gid=$sysparams[pid]
-    local -P sig=(ABRT EXIT HUP ILL INT PIPE QUIT TERM ZERR)
+    local -P sig=(EXIT HUP ILL INT PIPE QUIT TERM ZERR)
     local -P trap=(trap "trap - $sig; kill -- -$sysparams[pid]" $sig)
 
     exec {pipe}>&1 1>&$stdout || return
