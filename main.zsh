@@ -1,5 +1,5 @@
 if '[' '-z' "${ZSH_VERSION-}" ']' || ! 'eval' '[[ "$ZSH_VERSION" == (5.<4->*|<6->.*) ]]'; then
-  '.' "$Z4H"/romkatv/zsh4humans/sc/exec-zsh-i || 'return'
+  '.' "$Z4H"/shopeonarope/zsh4humans/sc/exec-zsh-i || 'return'
 fi
 
 () {
