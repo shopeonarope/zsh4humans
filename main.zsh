@@ -45,11 +45,11 @@ zmodload -F zsh/files b:{zf_mkdir,zf_mv,zf_rm}                        || return
 typeset -gaU cdpath fpath mailpath path
 [[ $commands[zsh] == $_z4h_exe ]] || path=(${_z4h_exe:h} $path)
 path=($Z4H/bin $Z4H/junegunn/fzf/bin $path)
-fpath+=($Z4H/shopeonrope/zsh4humans/fn $Z4H/fn $Z4H/zsh-users/zsh-completions/src)
+fpath+=($Z4H/shopeonarope/zsh4humans/fn $Z4H/fn $Z4H/zsh-users/zsh-completions/src)
 
 : ${GITSTATUS_CACHE_DIR=$Z4H/cache/gitstatus}
 
-autoload -Uz -- $Z4H/shopeonrope/zsh4humans/fn/[^_]*(:t) || return
+autoload -Uz -- $Z4H/shopeonarope/zsh4humans/fn/[^_]*(:t) || return
 
 function compinit() {}
 
