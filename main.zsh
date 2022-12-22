@@ -34,8 +34,7 @@ zmodload zsh/{datetime,langinfo,parameter,stat,system,terminfo,zutil} || return
 zmodload -F zsh/files b:{zf_mkdir,zf_mv,zf_rm}                        || return
 
 () {
-  set -x
-  if [[ $1 != $Z4H/shopeonrope/zsh4humans/main.zsh ]]; then
+  if [[ $1 != $Z4H/shopeonarope/zsh4humans/main.zsh ]]; then
     print -Pru2 -- "%F{3}z4h%f: confusing %Umain.zsh%u location: %F{1}${1//\%/%%}%f"
     return 1
   fi
