@@ -1,7 +1,7 @@
 local url postinstall
 
-if [[ $1 == romkatv/zsh4humans ]]; then
-  url=https://github.com/romkatv/zsh4humans/archive/${Z4H_URL:t}.tar.gz
+if [[ $1 == shopeonarope/zsh4humans ]]; then
+  url=https://github.com/shopeonarope/zsh4humans/archive/${Z4H_URL:t}.tar.gz
   print -Pru2 -- "%F{3}z4h%f: updating %B${1//\%/%%}%b"
 else
   local channel

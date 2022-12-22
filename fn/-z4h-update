@@ -9,8 +9,8 @@ local new=$Z4H.new.$$
   local zdotdir=${${${(q)ZDOTDIR}/#${(q)home}/'~'}//\%/%%}
   local z4h=${${${(q)Z4H}/#${(q)home}/'~'}//\%/%%}
 
-  Z4H=$new -z4h-install-one romkatv/zsh4humans      || return
-  $new/romkatv/zsh4humans/sc/setup -o $Z4H -n $new  || return 1
+  Z4H=$new -z4h-install-one shopeonarope/zsh4humans      || return
+  $new/shopeonarope/zsh4humans/sc/setup -o $Z4H -n $new  || return 1
   print -n >$new/tmp/updating                 || return 1
   Z4H=$new </dev/null >/dev/null $_z4h_exe -ic '
     (( $? )) && "exit" "1"
