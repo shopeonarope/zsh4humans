@@ -65,6 +65,7 @@ local old new
     local err
     builtin cd -q -- $new || exit
     if (( $+commands[curl] )); then
+      echo "$url"
       err="$(command curl -fsSLo snapshot.tar.gz -- $url 2>&1)"
     elif (( $+commands[wget] )); then
       err="$(command wget -O snapshot.tar.gz -- $url 2>&1)"
